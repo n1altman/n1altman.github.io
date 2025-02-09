@@ -6,71 +6,94 @@
     <title>Noah Altman - Resume</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: sans-serif;
             line-height: 1.6;
-            background-color: #f4f4f4;
-            color: #333;
-            padding: 0;
-            margin: 0;
+            margin: 20px;
         }
-        header {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-        }
-        main {
-            padding: 2rem;
-        }
-        h1, h2 {
-            color: #444;
+        h1, h2, h3 {
+            color: #333; /* Darker heading color */
         }
         .section {
-            margin-bottom: 2rem;
+            margin-bottom: 20px;
         }
-        .section ul {
+        .contact-info {
+            margin-bottom: 10px;
+        }
+        .education-entry {
+            margin-bottom: 15px;
+        }
+        .skill-list, .activity-list, .hobby-list {
             list-style-type: none;
             padding: 0;
         }
-        .section li {
-            margin: 0.5rem 0;
+        .skill-list li, .activity-list li, .hobby-list li {
+            margin-bottom: 5px;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Your Name</h1>
-        <p>Job Title | Contact Info | Location</p>
-    </header>
-    
-    <main>
-        <section class="section">
-            <h2>About Me</h2>
-            <p>Brief paragraph about yourself.</p>
-        </section>
 
-        <section class="section">
-            <h2>Experience</h2>
-            <ul>
-                <li><strong>Job Title</strong> at Company - Year(s)</li>
-                <li><strong>Job Title</strong> at Company - Year(s)</li>
-            </ul>
-        </section>
+    <h1>Noah Altman</h1>
+    <div class="contact-info">
+        <p>(360) 980-2885 | proaltman@gmail.com</p>
+    </div>
 
-        <section class="section">
-            <h2>Education</h2>
-            <ul>
-                <li><strong>Degree</strong> in Major, University Name - Graduation Year</li>
-            </ul>
-        </section>
+    <div class="section">
+        <h2>Education</h2>
+        <div class="education-entry">
+            <h3>Washington State University, Vancouver</h3>
+            <p>Bachelor's Degree in Electrical Engineering (Expected)</p>
+            <p>August 2023 - Present</p>
+            <p>Relevant Coursework: Electrical Engineering, Solar Cells, Computer Science, Linear Algebra, Electrical Fundamentals</p>
+            <p>Planned Minors: Psychology and Computer Science</p>
+        </div>
+        <div class="education-entry">
+            <h3>Oregon State University, Corvallis</h3>
+            <p>Bachelor's Degree in Electrical Engineering</p>
+            <p>September 2021 - June 2023</p>
+            <p>GPA: 3.61 (Unweighted)</p>
+            <p>Honors College Member</p>
+            <p>Relevant Coursework: Calculus, Physics, Chemistry, Computer Science, Electrical Fundamentals</p>
+            <p>Planned Minor: Psychology</p>
+        </div>
+        <div class="education-entry">
+            <h3>Ridgefield High School, Ridgefield</h3>
+            <p>High School Diploma</p>
+            <p>August 2017 - June 2021</p>
+            <p>GPA: 3.98 (Unweighted)</p>
+            <p>AP Courses: Human Geography, Psychology, Chemistry, US History, Composition, Calculus, Government, Literature</p>
+        </div>
+    </div>
 
-        <section class="section">
-            <h2>Skills</h2>
-            <ul>
-                <li>Skill 1</li>
-                <li>Skill 2</li>
-            </ul>
-        </section>
-    </main>
+    <div class="section">
+        <h2>Skills</h2>
+        <ul class="skill-list">
+            <li>Leadership</li>
+            <li>Organization</li>
+            <li>Communication</li>
+            <li>Time Management</li>
+            <li>Problem Solving</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Activities</h2>
+        <ul class="activity-list">
+            <li><strong>Cross Country Team (Assistant Coach)</strong><br>August 2023 - Present<br>Coached High School athletes at the state and regional level. Communicated with race management and other coaches.</li>
+            <li><strong>Oregon State University Running Club (Member)</strong><br>September 2021 - June 2023<br>Ran collegiate level races. Helped plan and coordinate group runs.</li>
+            <li><strong>National Honor Society (NHS) (Member)</strong><br>August 2019 - June 2021<br>Planned city-wide events. Tutored freshmen and sophomores.</li>
+            <li><strong>Associated Student Body (ASB) (Member)</strong><br>August 2017 - June 2019<br>Planned school-wide events. Led the planning of the High School talent show.</li>
+            <li><strong>Cross Country Team (Varsity Athlete/Team Captain)</strong><br>August 2017 - November 2020<br>Ran 5K races. Helped organize and manage the team during travel.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Hobbies</h2>
+        <ul class="hobby-list">
+            <li>Running</li>
+            <li>Computer Mechanics and Electronics</li>
+        </ul>
+    </div>
+
 </body>
 </html>
