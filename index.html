@@ -3,94 +3,180 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Noah Altman - Resume</title>
+    <title>Noah Altman</title>
     <style>
+        /* Basic Styling - Customize as needed */
         body {
-            font-family: sans-serif;
+            font-family: sans-serif; /* Choose your preferred font */
+            margin: 0;
+            background-color: #111; /* Dark background */
+            color: #eee; /* Light text color */
+        }
+        section {
+            padding: 60px 0;
+        }
+      .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+      .two-columns {
+            display: flex;
+            flex-wrap: wrap;
+        }
+      .column {
+            width: 50%;
+            padding: 16px;
+            box-sizing: border-box; /* Include padding in width */
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block; /* Prevents image from affecting layout */
+        }
+      .image-container {
+            overflow: hidden; /* For cropping/cover effect */
+        }
+      .text-content {
+            background-color: #333; /* Darker background for text */
+            padding: 98px 64px;
+            margin: 36px 0 0 -112px; /* Adjust margin as needed */
+            box-sizing: border-box;
+        }
+        h1 {
+            font-size: 3em; /* Adjust sizes as needed */
+        }
+        h2 {
+            font-size: 2em;
+        }
+        h3 {
+            font-size: 1.5em;
+        }
+        p {
+            font-size: 1em;
             line-height: 1.6;
-            margin: 20px;
         }
-        h1, h2, h3 {
-            color: #333; /* Darker heading color */
+      .about-images {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap; /* Allow wrapping on smaller screens */
         }
-        .section {
+      .about-images img {
+            width: 320px;
+            margin: 10px;
+        }
+      .resume-section {
+            background-color: #222;
+        }
+      .resume-item {
+            display: flex;
+            flex-wrap: wrap;
             margin-bottom: 20px;
         }
-        .contact-info {
-            margin-bottom: 10px;
+
+      .resume-item-title {
+            width: 66.66%;
+            padding-right: 20px;
         }
-        .education-entry {
-            margin-bottom: 15px;
+      .resume-item-details {
+            width: 33.33%; /* Or adjust as needed */
         }
-        .skill-list, .activity-list, .hobby-list {
-            list-style-type: none;
-            padding: 0;
-        }
-        .skill-list li, .activity-list li, .hobby-list li {
-            margin-bottom: 5px;
+        @media (max-width: 768px) {
+          .column {
+                width: 100%; /* Stack columns on smaller screens */
+                margin: 0;
+            }
+          .text-content {
+                margin: 0;
+                padding: 32px;
+            }
+          .resume-item-title,.resume-item-details{
+                width: 100%;
+                padding: 0;
+            }
+          .about-images img {
+                width: 90%; /* Make images responsive */
+            }
+
         }
     </style>
 </head>
 <body>
 
-    <h1>Noah Altman</h1>
-
-    <div class="section">
-        <h2>Education</h2>
-        <div class="education-entry">
-            <h3>Washington State University, Vancouver</h3>
-            <p>Bachelor's Degree in Electrical Engineering (Expected)</p>
-            <p>August 2023 - Present</p>
-            <p>Relevant Coursework: Electrical Engineering, Solar Cells, Computer Science, Linear Algebra, Electrical Fundamentals</p>
-            <p>Planned Minors: Psychology and Computer Science</p>
+    <section>
+        <div class="container two-columns">
+            <div class="column image-container">
+                <img src="https://uploads.quarkly.io/67aad53e9710450018a6ca40/images/KAY_4805.jpg?v=2025-02-14T18:27:17.750Z" alt="Noah Altman">
+            </div>
+            <div class="column text-content">
+                <h1>Hi, I’m Noah</h1>
+                <h3>Power Engineer <br>
+                    Lifelong Runner <br>
+                    Technology Enthusiast <br>
+                    Assistant XC Coach
+                </h3>
+            </div>
         </div>
-        <div class="education-entry">
-            <h3>Oregon State University, Corvallis</h3>
-            <p>Bachelor's Degree in Electrical Engineering</p>
-            <p>September 2021 - June 2023</p>
-            <p>GPA: 3.61 (Unweighted)</p>
-            <p>Honors College Member</p>
-            <p>Relevant Coursework: Calculus, Physics, Chemistry, Computer Science, Electrical Fundamentals</p>
-            <p>Planned Minor: Psychology</p>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2>About Me</h2>
+            <p>My name is Noah Altman, born and raised in Washington. Experienced in developing innovative solutions and driven by a desire to push the boundaries of technology. Outside of the tech world, I'm a dedicated runner, always striving for new personal bests. Connecting my passion for technology with the discipline and endurance of long-distance running.</p>
+            <div class="about-images">
+                <img src="https://images.unsplash.com/photo-1501870190084-cdf29f15ef87?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=80" alt="Image 1">
+                <img src="https://images.unsplash.com/photo-1503341960582-b45751874cf0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60" alt="Image 2">
+                <img src="https://images.unsplash.com/photo-1503342394128-c104d54dba01?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=80" alt="Image 3">
+            </div>
         </div>
-        <div class="education-entry">
-            <h3>Ridgefield High School, Ridgefield</h3>
-            <p>High School Diploma</p>
-            <p>August 2017 - June 2021</p>
-            <p>GPA: 3.98 (Unweighted)</p>
-            <p>AP Courses: Human Geography, Psychology, Chemistry, US History, Composition, Calculus, Government, Literature</p>
-        </div>
-    </div>
+    </section>
 
-    <div class="section">
-        <h2>Skills</h2>
-        <ul class="skill-list">
-            <li>Leadership</li>
-            <li>Organization</li>
-            <li>Communication</li>
-            <li>Time Management</li>
-            <li>Problem Solving</li>
-        </ul>
-    </div>
+    <section class="resume-section">
+        <div class="container">
+            <h2>Resume</h2>
 
-    <div class="section">
-        <h2>Activities</h2>
-        <ul class="activity-list">
-            <li><strong>Cross Country Team (Assistant Coach)</strong><br>August 2023 - Present<br>Coached High School athletes at the state and regional level. Communicated with race management and other coaches.</li>
-            <li><strong>Oregon State University Running Club (Member)</strong><br>September 2021 - June 2023<br>Ran collegiate level races. Helped plan and coordinate group runs.</li>
-            <li><strong>National Honor Society (NHS) (Member)</strong><br>August 2019 - June 2021<br>Planned city-wide events. Tutored freshmen and sophomores.</li>
-            <li><strong>Associated Student Body (ASB) (Member)</strong><br>August 2017 - June 2019<br>Planned school-wide events. Led the planning of the High School talent show.</li>
-            <li><strong>Cross Country Team (Varsity Athlete/Team Captain)</strong><br>August 2017 - November 2020<br>Ran 5K races. Helped organize and manage the team during travel.</li>
-        </ul>
-    </div>
+            <div class="resume-item">
+                <div class="resume-item-title">
+                    <h3>Education</h3>
+                    <p><strong>Washington State University, Vancouver</strong><br>
+                        <em>Bachelor's Degree in Electrical Engineering</em><br>
+                        <em>August 2023 - May 2025</em><br>
+                        GPA: 3.95 (Unweighted)<br>
+                        Planned Minors: Psychology and Computer Science<br>
+                        Relevant Coursework: Electrical Engineering, Solar Cells, Computer Science, Linear Algebra, Electrical Fundamentals</p>
+                    <p><strong>Oregon State University, Corvallis</strong><br>
+                        <em>Bachelor's Degree in Electrical Engineering</em><br>
+                        <em>September 2021 - June 2023</em><br>
+                        GPA: 3.61 (Unweighted)<br>
+                        Planned Minor: Psychology<br>
+                        Honors College Member<br>
+                        Relevant Coursework: Calculus, Physics, Chemistry, Computer Science, Electrical Fundamentals</p>
+                    <p><strong>Ridgefield High School, Ridgefield</strong><br>
+                        <em>High School Diploma</em><br>
+                        <em>August 2017 - June 2021</em><br>
+                        GPA: 3.98 (Unweighted)<br>
+                        AP Courses: Human Geography, Psychology, Chemistry, US History, Composition, Calculus, Government, Literature</p>
+                </div>
+                <div class="resume-item-details">
+                    <h3>Skills</h3>
+                    <p>Leadership<br>Organization<br>Communication<br>Time Management<br>Problem Solving</p>
+                </div>
+            </div>
 
-    <div class="section">
-        <h2>Hobbies</h2>
-        <ul class="hobby-list">
-            <li>Running</li>
-            <li>Computer Mechanics and Electronics</li>
-        </ul>
-    </div>
-
-</body>
-</html>
+            <div class="resume-item">
+                 <div class="resume-item-title">
+                    <h3>Activities</h3>
+                    <p><strong>Power Engineer - Student</strong><br>
+                        <em>November 2024 - Present</em><br>
+                        Worked as a student alongside other systems engineers in the transmission and distribution of power.</p>
+                    <p><strong>Cross Country Team (Assistant Coach)</strong><br>
+                        <em>August 2023 - Present</em><br>
+                        Coached High School athletes at the state and regional level. Communicated with race management and other coaches.</p>
+                    <p><strong>Oregon State University Running Club (Member)</strong><br>
+                        <em>September 2021 - June 2023</em><br>
+                        Ran collegiate level races. Helped plan and coordinate group runs.</p>
+                    <p><strong>National Honor Society (NHS) (Member)</strong><br>
+                        <em>August 2019 - June 2021</em><br>
+                        Planned city-wide events. Tutored freshmen and sophomores.</p>
+                    <p><strong>Associated Student Body (ASB) (Member)</strong><br>
+                        <em>August 201
