@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Noah Altman</title>
     <style>
-        /* Basic Styling - Customize as needed */
         body {
-            font-family: sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
             margin: 0;
             background-color: #111;
             color: #eee;
@@ -15,16 +14,16 @@
         section {
             padding: 60px 0;
         }
-      .container {
+    .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
         }
-      .two-columns {
+    .two-columns {
             display: flex;
             flex-wrap: wrap;
         }
-      .column {
+    .column {
             width: 50%;
             padding: 16px;
             box-sizing: border-box;
@@ -34,11 +33,12 @@
             height: auto;
             display: block;
         }
-      .image-container {
+    .image-container {
             overflow: hidden;
         }
-      .text-content {
-            background-color: #333;
+    .text-content {
+            background-color: #FFA500; /* Orange background */
+            color: #fff; /* White text */
             padding: 98px 64px;
             margin: 36px 0 0 -112px;
             box-sizing: border-box;
@@ -53,68 +53,81 @@
             font-size: 1.5em;
         }
         h4 {
-            font-size: 1.2em; /* Added h4 style */
+            font-size: 1.2em;
+            margin: 0;
         }
         p {
             font-size: 1em;
             line-height: 1.6;
         }
-      .about-images {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
+    .about-me-section {
+        background-color: #fff; /* White background for the entire About Me section */
+        color: #000; /* Black text */
+        padding: 60px 0;
+    }
+
+    .about-images {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .about-images img {
+        width: 320px;
+        margin: 10px;
+    }
+
+    .resume-section {
+        background-color: #111; 
+        padding: 60px; 
+    }
+
+    .resume-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px; 
+    }
+
+    .resume-column {
+        width: calc(50% - 20px); /* Adjusted to provide space */
+        box-sizing: border-box;
+        padding: 20px;
+        background-color: #333; 
+        border-radius: 8px;
+        color: #eee; 
+        margin-bottom: 20px; /* Space between the boxes */
+    }
+    .resume-item {
+        margin-bottom: 16px; /* Adds space between items within each box */
+    }
+    .resume-item h4 {
+        margin-top: 0;
+        color: #eee;
+    }
+    .skills-list,.hobbies-list {
+        list-style: none;
+        padding: 0;
+    }
+    .skills-list li,.hobbies-list li {
+        margin-bottom: 10px;
+    }
+    @media (max-width: 768px) {
+        .column {
+            width: 100%;
+            margin: 0;
         }
-      .about-images img {
-            width: 320px;
-            margin: 10px;
+        .text-content {
+            margin: 0;
+            padding: 32px;
         }
-      .resume-section {
-            background-color: #222;
-            padding: 40px 0; /* Adjusted padding */
-        }
-      .resume-wrapper {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px; /* Space between columns */
-        }
-      .resume-column {
-            width: calc(50% - 20px); /* Two columns with space */
-            box-sizing: border-box;
-            padding: 20px;
-            background-color: #333;
-            border-radius: 8px;
-        }
-      .resume-item {
+        .resume-column {
+            width: 100%;
             margin-bottom: 20px;
         }
-      .resume-item h4 {
-            margin-top: 0;
-            color: #eee;
+        .about-images img {
+            width: 90%;
         }
-      .skills-list,.hobbies-list {
-            list-style: none;
-            padding: 0;
-        }
-      .skills-list li,.hobbies-list li {
-            margin-bottom: 10px;
-        }
-        @media (max-width: 768px) {
-          .column {
-                width: 100%;
-                margin: 0;
-            }
-          .text-content {
-                margin: 0;
-                padding: 32px;
-            }
-          .resume-column {
-                width: 100%;
-                margin-bottom: 20px;
-            }
-          .about-images img {
-                width: 90%;
-            }
-        }
+    }
     </style>
 </head>
 <body>
@@ -135,14 +148,14 @@
         </div>
     </section>
 
-    <section>
+    <section class="about-me-section">
         <div class="container">
             <h2>About Me</h2>
             <p>My name is Noah Altman, born and raised in Washington. Experienced in developing innovative solutions and driven by a desire to push the boundaries of technology. Outside of the tech world, I'm a dedicated runner, always striving for new personal bests. Connecting my passion for technology with the discipline and endurance of long-distance running.</p>
             <div class="about-images">
                 <img src="images/KAY_5120.jpg" alt="Noah Altman 1">
-                <img src="images/KAY_5472.png" alt="Noah Altman 2">
-                <img src="images/KAY_5829.jpeg" alt="Noah Altman 3">
+                <img src="images/KAY_5472.jpg" alt="Noah Altman 2">
+                <img src="images/KAY_5829.jpg" alt="Noah Altman 3">
             </div>
         </div>
     </section>
@@ -156,16 +169,16 @@
                     <h3>Education</h3>
                     <div class="resume-item">
                         <h4>Washington State University, Vancouver</h4>
-                        <p>Bachelor's Degree in Electrical Engineering<br>
-                           August 2023 - May 2025<br>
+                        <p><em>Bachelor's Degree in Electrical Engineering</em><br>
+                           <em>August 2023 - May 2025</em><br>
                            GPA: 3.95 (Unweighted)<br>
                            Planned Minors: Psychology and Computer Science<br>
                            Relevant Coursework: Electrical Engineering, Solar Cells, Computer Science, Linear Algebra, Electrical Fundamentals</p>
                     </div>
                     <div class="resume-item">
                         <h4>Oregon State University, Corvallis</h4>
-                        <p>Bachelor's Degree in Electrical Engineering<br>
-                           September 2021 - June 2023<br>
+                        <p><em>Bachelor's Degree in Electrical Engineering</em><br>
+                           <em>September 2021 - June 2023</em><br>
                            GPA: 3.61 (Unweighted)<br>
                            Planned Minor: Psychology<br>
                            Honors College Member<br>
@@ -173,8 +186,8 @@
                     </div>
                     <div class="resume-item">
                         <h4>Ridgefield High School, Ridgefield</h4>
-                        <p>High School Diploma<br>
-                           August 2017 - June 2021<br>
+                        <p><em>High School Diploma</em><br>
+                           <em>August 2017 - June 2021</em><br>
                            GPA: 3.98 (Unweighted)<br>
                            AP Courses: Human Geography, Psychology, Chemistry, US History, Composition, Calculus, Government, Literature</p>
                     </div>
@@ -197,36 +210,47 @@
                     <h3>Activities</h3>
                     <div class="resume-item">
                         <h4>Power Engineer - Student</h4>
-                        <p>November 2024 - Present<br>
+                        <p><em>November 2024 - Present</em><br>
                            Worked as a student alongside other systems engineers in the transmission and distribution of power.</p>
                     </div>
                     <div class="resume-item">
                         <h4>Cross Country Team (Assistant Coach)</h4>
-                        <p>August 2023 - Present<br>
+                        <p><em>August 2023 - Present</em><br>
                            Coached High School athletes at the state and regional level. Communicated with race management and other coaches.</p>
                     </div>
                     <div class="resume-item">
                         <h4>Oregon State University Running Club (Member)</h4>
-                        <p>September 2021 - June 2023<br>
+                        <p><em>September 2021 - June 2023</em><br>
                            Ran collegiate level races. Helped plan and coordinate group runs.</p>
                     </div>
                     <div class="resume-item">
                         <h4>National Honor Society (NHS) (Member)</h4>
-                        <p>August 2019 - June 2021<br>
+                        <p><em>August 2019 - June 2021</em><br>
                            Planned city-wide events. Tutored freshmen and sophomores.</p>
                     </div>
                     <div class="resume-item">
-                        <h4>Associated Student Body (ASB) (Member)</h4>
-                        <p>August 2017 - June 2019<br>
-                           Planned school-wide events. Led the planning of the High School talent show.</p>
+                        <h4>Cross Country Team (Varsity Athlete/Team Captain)</h4>
+                        <p><em>August 2017 - November 2020</em><br>
+                           Ran 5K races. Helped organize and manage the team during travel.</p>
                     </div>
                     <div class="resume-item">
-                        <h4>Cross Country Team (Varsity Athlete/Team Captain)</h4>
-                        <p>August 2017 - November 2020<br>
-                           Ran 5K races. Helped organize and manage the team during travel.</p>
+                        <h4>Associated Student Body (ASB) (Member)</h4>
+                        <p><em>August 2017 - June 2019</em><br>
+                           Planned school-wide events. Led the planning of the High School talent show.</p>
                     </div>
                 </div>
 
                 <div class="resume-column">
                     <h3>Hobbies</h3>
-                    <ul class="h
+                    <ul class="hobbies-list">
+                        <li>Running</li>
+                        <li>Computer Mechanics and Electronics</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+</html>
