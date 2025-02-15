@@ -1,182 +1,708 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Noah Altman</title>
-    <style>
-        /* Basic Styling - Customize as needed */
-        body {
-            font-family: sans-serif; /* Choose your preferred font */
-            margin: 0;
-            background-color: #111; /* Dark background */
-            color: #eee; /* Light text color */
-        }
-        section {
-            padding: 60px 0;
-        }
-      .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-      .two-columns {
-            display: flex;
-            flex-wrap: wrap;
-        }
-      .column {
-            width: 50%;
-            padding: 16px;
-            box-sizing: border-box; /* Include padding in width */
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block; /* Prevents image from affecting layout */
-        }
-      .image-container {
-            overflow: hidden; /* For cropping/cover effect */
-        }
-      .text-content {
-            background-color: #333; /* Darker background for text */
-            padding: 98px 64px;
-            margin: 36px 0 0 -112px; /* Adjust margin as needed */
-            box-sizing: border-box;
-        }
-        h1 {
-            font-size: 3em; /* Adjust sizes as needed */
-        }
-        h2 {
-            font-size: 2em;
-        }
-        h3 {
-            font-size: 1.5em;
-        }
-        p {
-            font-size: 1em;
-            line-height: 1.6;
-        }
-      .about-images {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap; /* Allow wrapping on smaller screens */
-        }
-      .about-images img {
-            width: 320px;
-            margin: 10px;
-        }
-      .resume-section {
-            background-color: #222;
-        }
-      .resume-item {
-            display: flex;
-            flex-wrap: wrap;
-            margin-bottom: 20px;
-        }
-
-      .resume-item-title {
-            width: 66.66%;
-            padding-right: 20px;
-        }
-      .resume-item-details {
-            width: 33.33%; /* Or adjust as needed */
-        }
-        @media (max-width: 768px) {
-          .column {
-                width: 100%; /* Stack columns on smaller screens */
-                margin: 0;
-            }
-          .text-content {
-                margin: 0;
-                padding: 32px;
-            }
-          .resume-item-title,.resume-item-details{
-                width: 100%;
-                padding: 0;
-            }
-          .about-images img {
-                width: 90%; /* Make images responsive */
-            }
-
-        }
-    </style>
-</head>
-<body>
-
-    <section>
-        <div class="container two-columns">
-            <div class="column image-container">
-                <img src="https://uploads.quarkly.io/67aad53e9710450018a6ca40/images/KAY_4805.jpg?v=2025-02-14T18:27:17.750Z" alt="Noah Altman">
-            </div>
-            <div class="column text-content">
-                <h1>Hi, I’m Noah</h1>
-                <h3>Power Engineer <br>
-                    Lifelong Runner <br>
-                    Technology Enthusiast <br>
-                    Assistant XC Coach
-                </h3>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div class="container">
-            <h2>About Me</h2>
-            <p>My name is Noah Altman, born and raised in Washington. Experienced in developing innovative solutions and driven by a desire to push the boundaries of technology. Outside of the tech world, I'm a dedicated runner, always striving for new personal bests. Connecting my passion for technology with the discipline and endurance of long-distance running.</p>
-            <div class="about-images">
-                <img src="https://images.unsplash.com/photo-1501870190084-cdf29f15ef87?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=80" alt="Image 1">
-                <img src="https://images.unsplash.com/photo-1503341960582-b45751874cf0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60" alt="Image 2">
-                <img src="https://images.unsplash.com/photo-1503342394128-c104d54dba01?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=80" alt="Image 3">
-            </div>
-        </div>
-    </section>
-
-    <section class="resume-section">
-        <div class="container">
-            <h2>Resume</h2>
-
-            <div class="resume-item">
-                <div class="resume-item-title">
-                    <h3>Education</h3>
-                    <p><strong>Washington State University, Vancouver</strong><br>
-                        <em>Bachelor's Degree in Electrical Engineering</em><br>
-                        <em>August 2023 - May 2025</em><br>
-                        GPA: 3.95 (Unweighted)<br>
-                        Planned Minors: Psychology and Computer Science<br>
-                        Relevant Coursework: Electrical Engineering, Solar Cells, Computer Science, Linear Algebra, Electrical Fundamentals</p>
-                    <p><strong>Oregon State University, Corvallis</strong><br>
-                        <em>Bachelor's Degree in Electrical Engineering</em><br>
-                        <em>September 2021 - June 2023</em><br>
-                        GPA: 3.61 (Unweighted)<br>
-                        Planned Minor: Psychology<br>
-                        Honors College Member<br>
-                        Relevant Coursework: Calculus, Physics, Chemistry, Computer Science, Electrical Fundamentals</p>
-                    <p><strong>Ridgefield High School, Ridgefield</strong><br>
-                        <em>High School Diploma</em><br>
-                        <em>August 2017 - June 2021</em><br>
-                        GPA: 3.98 (Unweighted)<br>
-                        AP Courses: Human Geography, Psychology, Chemistry, US History, Composition, Calculus, Government, Literature</p>
-                </div>
-                <div class="resume-item-details">
-                    <h3>Skills</h3>
-                    <p>Leadership<br>Organization<br>Communication<br>Time Management<br>Problem Solving</p>
-                </div>
-            </div>
-
-            <div class="resume-item">
-                 <div class="resume-item-title">
-                    <h3>Activities</h3>
-                    <p><strong>Power Engineer - Student</strong><br>
-                        <em>November 2024 - Present</em><br>
-                        Worked as a student alongside other systems engineers in the transmission and distribution of power.</p>
-                    <p><strong>Cross Country Team (Assistant Coach)</strong><br>
-                        <em>August 2023 - Present</em><br>
-                        Coached High School athletes at the state and regional level. Communicated with race management and other coaches.</p>
-                    <p><strong>Oregon State University Running Club (Member)</strong><br>
-                        <em>September 2021 - June 2023</em><br>
-                        Ran collegiate level races. Helped plan and coordinate group runs.</p>
-                    <p><strong>National Honor Society (NHS) (Member)</strong><br>
-                        <em>August 2019 - June 2021</em><br>
-                        Planned city-wide events. Tutored freshmen and sophomores.</p>
-                    <p><strong>Associated Student Body (ASB) (Member)</strong><br>
-                        <em>August 201
+<Components.QuarklycommunityKitScrollIndicator />
+<Section background="--color-darkL2" padding="60px 0" sm-padding="40px 0">
+	<Box margin="-16px -16px -16px -16px" padding="16px 16px 16px 16px" display="flex" flex-wrap="wrap">
+		<Box padding="16px 16px 16px 16px" width="50%" lg-width="100%">
+			<Box
+				background="url(https://uploads.quarkly.io/67aad53e9710450018a6ca40/images/KAY_4805.jpg?v=2025-02-14T18:27:17.750Z) 50% 15%/cover"
+				padding="0px 0px 672px 0px"
+				margin="0px -112px 0px 0px"
+				lg-margin="0px 0px 0px 0px"
+				sm-padding="0px 0px 400px 0px"
+			/>
+		</Box>
+		<Box width="50%" display="flex" padding="16px 16px 0px 16px" lg-width="100%">
+			<Box
+				padding="98px 64px 98px 64px"
+				mix-blend-mode="lighten"
+				background="--color-greyD2"
+				margin="36px 0px -20px -112px"
+				display="flex"
+				flex-direction="column"
+				color="--light"
+				lg-margin="0px 0px 0px 0px"
+				lg-width="100%"
+				sm-padding="64px 32px 64px 32px"
+			>
+				<Text
+					as="h4"
+					margin="0"
+					font="--base"
+					letter-spacing="1px"
+					text-transform="uppercase"
+				/>
+				<Text as="h1" margin="0 0 16px 0" font="--headline1" lg-font="--headline2">
+					Hi, I’m Noah 
+				</Text>
+				<Text
+					as="p"
+					margin="16px 0"
+					font="--headline3"
+					max-width="400px"
+					text-align="right"
+				>
+					<Span
+						font-weight="normal"
+						overflow-wrap="normal"
+						word-break="normal"
+						white-space="normal"
+						text-indent="0"
+						text-overflow="clip"
+						hyphens="manual"
+						user-select="auto"
+						pointer-events="auto"
+					>
+						Power Engineer
+						<br />
+						Lifelong Runner
+						<br />
+						Technology Enthusiast
+						<br />
+						Assistant XC Coach
+					</Span>
+				</Text>
+			</Box>
+		</Box>
+	</Box>
+</Section>
+<Section text-align="center" padding="80px 0" sm-padding="40px 0">
+	<Text as="h1" font="--headline1" md-font="--headline2" margin="20px 0 0 0">
+		About Me
+	</Text>
+	<Text as="p" font="--lead" margin="20px 0 0 0">
+		My name is Noah Altman, born and raised in Washington. 
+ Experienced in developing innovative solutions and driven by a desire 
+to push the boundaries of technology.  Outside of the tech world, I'm a 
+dedicated runner, always striving for new personal bests.  Connecting my
+ passion for technology with the discipline and endurance of 
+long-distance running.
+	</Text>
+	<Box display="flex" margin="40px 0 20px 0" justify-content="space-around" sm-flex-direction="column">
+		<Box padding="10px">
+			<Image src="https://images.unsplash.com/photo-1501870190084-cdf29f15ef87?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=80" width="320px" max-width="100%" />
+		</Box>
+		<Box padding="10px">
+			<Image src="https://images.unsplash.com/photo-1503341960582-b45751874cf0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60" width="320px" max-width="100%" />
+		</Box>
+		<Box padding="10px">
+			<Image src="https://images.unsplash.com/photo-1503342394128-c104d54dba01?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=80" width="320px" max-width="100%" />
+		</Box>
+	</Box>
+</Section>
+<Section
+	padding="60px 0"
+	sm-padding="40px 0"
+	min-height="600px"
+	sm-min-height="auto"
+	background="--color-dark"
+	display="flex"
+	flex-direction="column"
+>
+	<Override slot="SectionContent" flex-direction="row" flex-wrap="wrap" color="#ffffff" />
+	<Text
+		font="--base"
+		text-transform="uppercase"
+		letter-spacing="1px"
+		color="--grey"
+		margin="0px"
+		width="100%"
+	/>
+	<Text
+		as="h1"
+		margin="8px 0px 32px"
+		font="--headline1"
+		md-font="--headline2"
+		color="--light"
+		width="100%"
+	>
+		Resume
+	</Text>
+	<Text
+		margin="0px"
+		max-width="600px"
+		font="--headline3"
+		color="--light"
+		padding="0px 16px 0px 0px"
+		width="66.66%"
+		md-width="100%"
+		md-padding="0px 0px 0px 0px"
+		md-margin="0px 0px 24px 0px"
+	>
+		Education
+	</Text>
+	<Text
+		margin="0px 0px 0px auto"
+		font="--headline3"
+		color="--light"
+		width="20%"
+		md-width="100%"
+		md-margin="0px 0px 32px 0px"
+	>
+		Skills
+	</Text>
+	<Text
+		margin="0px"
+		max-width="600px"
+		font="--base"
+		color="--light"
+		padding="0px 16px 0px 0px"
+		width="66.66%"
+		md-width="100%"
+		md-padding="0px 0px 0px 0px"
+		md-margin="0px 0px 24px 0px"
+	>
+		<Strong>
+			<Span
+				overflow-wrap="normal"
+				word-break="normal"
+				white-space="normal"
+				text-indent="0"
+				text-overflow="clip"
+				hyphens="manual"
+				user-select="auto"
+				pointer-events="auto"
+			>
+				Washington State University, Vancouver
+			</Span>
+		</Strong>
+		<br />
+		<Em
+			overflow-wrap="normal"
+			word-break="normal"
+			white-space="normal"
+			text-indent="0"
+			text-overflow="clip"
+			hyphens="manual"
+			user-select="auto"
+			pointer-events="auto"
+		>
+			Bachelor's Degree in Electrical Engineering
+		</Em>
+		<br />
+		<Em
+			overflow-wrap="normal"
+			word-break="normal"
+			white-space="normal"
+			text-indent="0"
+			text-overflow="clip"
+			hyphens="manual"
+			user-select="auto"
+			pointer-events="auto"
+		>
+			August 2023 - May 2025
+    
+			<br />
+		</Em>
+		<Span
+			overflow-wrap="normal"
+			word-break="normal"
+			white-space="normal"
+			text-indent="0"
+			text-overflow="clip"
+			hyphens="manual"
+			user-select="auto"
+			pointer-events="auto"
+		>
+			GPA: 3.95 (Unweighted)
+			<br />
+			Planned Minors: Psychology and Computer Science
+    
+		</Span>
+		<br />
+		Relevant Coursework: Electrical Engineering, Solar Cells, Computer Science, Linear Algebra, Electrical Fundamentals
+    
+		<br />
+		<br />
+		<Strong
+			overflow-wrap="normal"
+			word-break="normal"
+			white-space="normal"
+			text-indent="0"
+			text-overflow="clip"
+			hyphens="manual"
+			user-select="auto"
+			pointer-events="auto"
+		>
+			Oregon State University, Corvallis
+    
+		</Strong>
+		<br />
+		<Em
+			overflow-wrap="normal"
+			word-break="normal"
+			white-space="normal"
+			text-indent="0"
+			text-overflow="clip"
+			hyphens="manual"
+			user-select="auto"
+			pointer-events="auto"
+		>
+			Bachelor's Degree in Electrical Engineering
+    
+		</Em>
+		<br />
+		<Em
+			overflow-wrap="normal"
+			word-break="normal"
+			white-space="normal"
+			text-indent="0"
+			text-overflow="clip"
+			hyphens="manual"
+			user-select="auto"
+			pointer-events="auto"
+		>
+			September 2021 - June 2023
+    
+		</Em>
+		<br />
+		GPA: 3.61 (Unweighted)
+    
+		<br />
+		Planned Minor: Psychology     
+		<br />
+		Honors College Member
+    
+		<br />
+		Relevant Coursework: Calculus, Physics, Chemistry, Computer Science, Electrical Fundamentals
+    
+		<br />
+		<br />
+		<Strong
+			overflow-wrap="normal"
+			word-break="normal"
+			white-space="normal"
+			text-indent="0"
+			text-overflow="clip"
+			hyphens="manual"
+			user-select="auto"
+			pointer-events="auto"
+		>
+			Ridgefield High School, Ridgefield
+		</Strong>
+		   
+		<br />
+		High School Diploma
+   
+		<br />
+		August 2017 - June 2021
+   
+		<br />
+		GPA: 3.98 (Unweighted)
+   
+		<br />
+		AP Courses: Human Geography, Psychology, Chemistry, US History, Composition, Calculus, Government, Literature 
+	</Text>
+	<Text
+		margin="0px 0px 0px auto"
+		font="--base"
+		color="--light"
+		width="20%"
+		md-width="100%"
+		md-margin="0px 0px 32px 0px"
+	>
+		  Leadership
+            
+		<br />
+		Organization
+            
+		<br />
+		Communication
+            
+		<br />
+		Time Management
+            
+		<br />
+		Problem Solving
+  
+	</Text>
+	<Text
+		margin="40px 0px 0px 0px"
+		max-width="600px"
+		font="--headline3"
+		color="--light"
+		padding="0px 16px 0px 0px"
+		width="66.66%"
+		md-width="100%"
+		md-padding="0px 0px 0px 0px"
+		md-margin="0px 0px 24px 0px"
+	>
+		Activites
+	</Text>
+	<Text
+		margin="40px 0px 0px auto"
+		font="--headline3"
+		color="--light"
+		width="20%"
+		md-width="100%"
+		md-margin="0px 0px 32px 0px"
+	>
+		Hobbies
+	</Text>
+	<Text
+		margin="0px"
+		max-width="600px"
+		font="--base"
+		color="--light"
+		padding="0px 16px 0px 0px"
+		width="66.66%"
+		md-width="100%"
+		md-padding="0px 0px 0px 0px"
+		md-margin="0px 0px 24px 0px"
+	>
+		<Span
+			overflow-wrap="normal"
+			word-break="normal"
+			white-space="normal"
+			text-indent="0"
+			text-overflow="clip"
+			hyphens="manual"
+			user-select="auto"
+			pointer-events="auto"
+		>
+			<Span
+				overflow-wrap="normal"
+				word-break="normal"
+				white-space="normal"
+				text-indent="0"
+				text-overflow="clip"
+				hyphens="manual"
+				user-select="auto"
+				pointer-events="auto"
+			>
+				<Span
+					overflow-wrap="normal"
+					word-break="normal"
+					white-space="normal"
+					text-indent="0"
+					text-overflow="clip"
+					hyphens="manual"
+					user-select="auto"
+					pointer-events="auto"
+				>
+					<Strong
+						overflow-wrap="normal"
+						word-break="normal"
+						white-space="normal"
+						text-indent="0"
+						text-overflow="clip"
+						hyphens="manual"
+						user-select="auto"
+						pointer-events="auto"
+					>
+						Power Engineer - Student
+					</Strong>
+				</Span>
+			</Span>
+		</Span>
+		<Strong
+			overflow-wrap="normal"
+			word-break="normal"
+			white-space="normal"
+			text-indent="0"
+			text-overflow="clip"
+			hyphens="manual"
+			user-select="auto"
+			pointer-events="auto"
+		>
+			<Span
+				overflow-wrap="normal"
+				word-break="normal"
+				white-space="normal"
+				text-indent="0"
+				text-overflow="clip"
+				hyphens="manual"
+				user-select="auto"
+				pointer-events="auto"
+			>
+				<br />
+			</Span>
+		</Strong>
+		<Span
+			overflow-wrap="normal"
+			word-break="normal"
+			white-space="normal"
+			text-indent="0"
+			text-overflow="clip"
+			hyphens="manual"
+			user-select="auto"
+			pointer-events="auto"
+		>
+			<Span
+				overflow-wrap="normal"
+				word-break="normal"
+				white-space="normal"
+				text-indent="0"
+				text-overflow="clip"
+				hyphens="manual"
+				user-select="auto"
+				pointer-events="auto"
+			>
+				<Em
+					overflow-wrap="normal"
+					word-break="normal"
+					white-space="normal"
+					text-indent="0"
+					text-overflow="clip"
+					hyphens="manual"
+					user-select="auto"
+					pointer-events="auto"
+				>
+					November 2024 - Present
+					<br />
+				</Em>
+				<Span
+					overflow-wrap="normal"
+					word-break="normal"
+					white-space="normal"
+					text-indent="0"
+					text-overflow="clip"
+					hyphens="manual"
+					user-select="auto"
+					pointer-events="auto"
+				>
+					Worked as a student alongside other systems engineers in the transmission and distribution of power.
+				</Span>
+				<Em
+					overflow-wrap="normal"
+					word-break="normal"
+					white-space="normal"
+					text-indent="0"
+					text-overflow="clip"
+					hyphens="manual"
+					user-select="auto"
+					pointer-events="auto"
+				>
+					 
+				</Em>
+				<br />
+			</Span>
+		</Span>
+		<Strong
+			overflow-wrap="normal"
+			word-break="normal"
+			white-space="normal"
+			text-indent="0"
+			text-overflow="clip"
+			hyphens="manual"
+			user-select="auto"
+			pointer-events="auto"
+		>
+			<Span
+				overflow-wrap="normal"
+				word-break="normal"
+				white-space="normal"
+				text-indent="0"
+				text-overflow="clip"
+				hyphens="manual"
+				user-select="auto"
+				pointer-events="auto"
+			>
+				<br />
+			</Span>
+		</Strong>
+		<Span
+			overflow-wrap="normal"
+			word-break="normal"
+			white-space="normal"
+			text-indent="0"
+			text-overflow="clip"
+			hyphens="manual"
+			user-select="auto"
+			pointer-events="auto"
+		>
+			<Span
+				overflow-wrap="normal"
+				word-break="normal"
+				white-space="normal"
+				text-indent="0"
+				text-overflow="clip"
+				hyphens="manual"
+				user-select="auto"
+				pointer-events="auto"
+			>
+				<Strong
+					overflow-wrap="normal"
+					word-break="normal"
+					white-space="normal"
+					text-indent="0"
+					text-overflow="clip"
+					hyphens="manual"
+					user-select="auto"
+					pointer-events="auto"
+				>
+					<Span
+						overflow-wrap="normal"
+						word-break="normal"
+						white-space="normal"
+						text-indent="0"
+						text-overflow="clip"
+						hyphens="manual"
+						user-select="auto"
+						pointer-events="auto"
+					>
+						Cross Country Team (Assistant Coach)
+					</Span>
+				</Strong>
+			</Span>
+		</Span>
+		<br />
+		<Em
+			overflow-wrap="normal"
+			word-break="normal"
+			white-space="normal"
+			text-indent="0"
+			text-overflow="clip"
+			hyphens="manual"
+			user-select="auto"
+			pointer-events="auto"
+		>
+			August 2023 - Present
+		</Em>
+		<br />
+		Coached High School athletes at the state and regional level. Communicated with race management and other coaches.
+            
+		<br />
+		<br />
+		<Strong
+			overflow-wrap="normal"
+			word-break="normal"
+			white-space="normal"
+			text-indent="0"
+			text-overflow="clip"
+			hyphens="manual"
+			user-select="auto"
+			pointer-events="auto"
+		>
+			<Span
+				overflow-wrap="normal"
+				word-break="normal"
+				white-space="normal"
+				text-indent="0"
+				text-overflow="clip"
+				hyphens="manual"
+				user-select="auto"
+				pointer-events="auto"
+			>
+				Oregon State University Running Club (Member)
+			</Span>
+		</Strong>
+		<br />
+		<Em
+			overflow-wrap="normal"
+			word-break="normal"
+			white-space="normal"
+			text-indent="0"
+			text-overflow="clip"
+			hyphens="manual"
+			user-select="auto"
+			pointer-events="auto"
+		>
+			September 2021 - June 2023
+		</Em>
+		<br />
+		Ran collegiate level races. Helped plan and coordinate group runs.
+            
+		<br />
+		<br />
+		<Strong
+			overflow-wrap="normal"
+			word-break="normal"
+			white-space="normal"
+			text-indent="0"
+			text-overflow="clip"
+			hyphens="manual"
+			user-select="auto"
+			pointer-events="auto"
+		>
+			National Honor Society (NHS) (Member)
+		</Strong>
+		<br />
+		<Em
+			overflow-wrap="normal"
+			word-break="normal"
+			white-space="normal"
+			text-indent="0"
+			text-overflow="clip"
+			hyphens="manual"
+			user-select="auto"
+			pointer-events="auto"
+		>
+			August 2019 - June 2021
+		</Em>
+		<br />
+		Planned city-wide events. Tutored freshmen and sophomores.
+            
+		<br />
+		<br />
+		<Strong
+			overflow-wrap="normal"
+			word-break="normal"
+			white-space="normal"
+			text-indent="0"
+			text-overflow="clip"
+			hyphens="manual"
+			user-select="auto"
+			pointer-events="auto"
+		>
+			Associated Student Body (ASB) (Member)
+		</Strong>
+		<br />
+		<Em
+			overflow-wrap="normal"
+			word-break="normal"
+			white-space="normal"
+			text-indent="0"
+			text-overflow="clip"
+			hyphens="manual"
+			user-select="auto"
+			pointer-events="auto"
+		>
+			August 2017 - June 2019
+		</Em>
+		<br />
+		Planned school-wide events. Led the planning of the High School talent show.
+            
+		<br />
+		<br />
+		<Strong
+			overflow-wrap="normal"
+			word-break="normal"
+			white-space="normal"
+			text-indent="0"
+			text-overflow="clip"
+			hyphens="manual"
+			user-select="auto"
+			pointer-events="auto"
+		>
+			Cross Country Team (Varsity Athlete/Team Captain)
+		</Strong>
+		<br />
+		<Em
+			overflow-wrap="normal"
+			word-break="normal"
+			white-space="normal"
+			text-indent="0"
+			text-overflow="clip"
+			hyphens="manual"
+			user-select="auto"
+			pointer-events="auto"
+		>
+			August 2017 - November 2020
+		</Em>
+		<br />
+		Ran 5K races. Helped organize and manage the team during travel.
+        
+	</Text>
+	<Text
+		margin="0px 0px 0px auto"
+		font="--base"
+		color="--light"
+		width="20%"
+		md-width="100%"
+		md-margin="0px 0px 32px 0px"
+	>
+		Running
+		<br />
+		Computer Mechanics and Electronics
+	</Text>
+</Section>
+<Components.QuarklycommunityKitBackToTop />
