@@ -6,251 +6,168 @@
     <title>Noah Altman</title>
     <style>
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             margin: 0;
-            background-color: #111;
-            color: #eee;
-        }
-        section {
-            padding: 60px 0;
-        }
-    .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-    .two-columns {
-            display: flex;
-            flex-wrap: wrap;
-        }
-    .column {
-            width: 50%;
-            padding: 16px;
-            box-sizing: border-box;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-        }
-    .image-container {
-            overflow: hidden;
-        }
-    .text-content {
-            background-color: #FFA500; /* Orange background */
-            color: #fff; /* White text */
-            padding: 98px 64px;
-            margin: 36px 0 0 -112px;
-            box-sizing: border-box;
-        }
-        h1 {
-            font-size: 3em;
-        }
-        h2 {
-            font-size: 2em;
-        }
-        h3 {
-            font-size: 1.5em;
-        }
-        h4 {
-            font-size: 1.2em;
-            margin: 0;
-        }
-        p {
-            font-size: 1em;
+            background-color: #0D0D0D;
+            color: #EEE;
             line-height: 1.6;
         }
-    .about-me-section {
-        background-color: #fff; /* White background for the entire About Me section */
-        color: #000; /* Black text */
-        padding: 60px 0;
-    }
-
-    .about-images {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-    }
-
-    .about-images img {
-        width: 320px;
-        margin: 10px;
-    }
-
-    .resume-section {
-        background-color: #111; 
-        padding: 60px; 
-    }
-
-    .resume-wrapper {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 40px; 
-    }
-
-    .resume-column {
-        width: calc(50% - 20px); /* Adjusted to provide space */
-        box-sizing: border-box;
-        padding: 20px;
-        background-color: #333; 
-        border-radius: 8px;
-        color: #eee; 
-        margin-bottom: 20px; /* Space between the boxes */
-    }
-    .resume-item {
-        margin-bottom: 16px; /* Adds space between items within each box */
-    }
-    .resume-item h4 {
-        margin-top: 0;
-        color: #eee;
-    }
-    .skills-list,.hobbies-list {
-        list-style: none;
-        padding: 0;
-    }
-    .skills-list li,.hobbies-list li {
-        margin-bottom: 10px;
-    }
-    @media (max-width: 768px) {
-        .column {
-            width: 100%;
-            margin: 0;
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 20px;
         }
-        .text-content {
-            margin: 0;
-            padding: 32px;
+        header {
+            background: #222;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #FFA500;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 60px 20px;
+        }
+        .hero img {
+            width: 300px;
+            border-radius: 8px;
+        }
+        .hero-text {
+            max-width: 500px;
+            padding-left: 40px;
+        }
+        .about-me, .portfolio, .contact, .strava, .resume {
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .strava iframe {
+            width: 300px;
+            height: 160px;
+            border: none;
+        }
+        .resume-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px; 
+            justify-content: center;
         }
         .resume-column {
-            width: 100%;
-            margin-bottom: 20px;
+            width: 45%;
+            box-sizing: border-box;
+            padding: 20px;
+            background-color: #333;
+            border-radius: 8px;
+            color: #eee;
         }
-        .about-images img {
-            width: 90%;
+        .resume-item {
+            margin-bottom: 16px;
         }
-    }
+        .resume-item h4 {
+            margin-top: 0;
+            color: #FFA500;
+        }
+        .footer {
+            background: #222;
+            padding: 20px;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+            .hero-text {
+                padding: 20px 0;
+            }
+            .resume-column {
+                width: 100%;
+            }
+        }
     </style>
 </head>
 <body>
 
-    <section>
-        <div class="container two-columns">
-            <div class="column image-container">
-                <img src="images/KAY_4805.jpg" alt="Noah Altman">
+<header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#resume">Resume</a>
+        <a href="#strava">Strava</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <img src="images/KAY_4805.jpg" alt="Noah Altman">
+    <div class="hero-text">
+        <h1>Hi, I’m Noah</h1>
+        <h3>Power Engineer | Runner | Tech Enthusiast</h3>
+    </div>
+</section>
+
+<section id="about" class="about-me">
+    <div class="container">
+        <h2>About Me</h2>
+        <p>Experienced in power engineering and passionate about running and technology. I strive to merge technical innovation with the endurance mindset of a lifelong athlete.</p>
+    </div>
+</section>
+
+<section id="resume" class="resume">
+    <div class="container">
+        <h2>Resume</h2>
+        <div class="resume-wrapper">
+            <div class="resume-column">
+                <h3>Education</h3>
+                <div class="resume-item">
+                    <h4>Washington State University, Vancouver</h4>
+                    <p>Bachelor's Degree in Electrical Engineering<br>
+                    August 2023 - May 2025<br>
+                    GPA: 3.95 | Minors: Psychology, Computer Science</p>
+                </div>
+                <div class="resume-item">
+                    <h4>Oregon State University, Corvallis</h4>
+                    <p>Bachelor's Degree in Electrical Engineering<br>
+                    September 2021 - June 2023<br>
+                    GPA: 3.61 | Minor: Psychology</p>
+                </div>
             </div>
-            <div class="column text-content">
-                <h1>Hi, I’m Noah</h1>
-                <h3>Power Engineer <br>
-                    Lifelong Runner <br>
-                    Technology Enthusiast <br>
-                    Assistant XC Coach
-                </h3>
+            <div class="resume-column">
+                <h3>Skills</h3>
+                <ul>
+                    <li>Leadership</li>
+                    <li>Organization</li>
+                    <li>Communication</li>
+                    <li>Time Management</li>
+                    <li>Problem Solving</li>
+                </ul>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section class="about-me-section">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>My name is Noah Altman, born and raised in Washington. Experienced in developing innovative solutions and driven by a desire to push the boundaries of technology. Outside of the tech world, I'm a dedicated runner, always striving for new personal bests. Connecting my passion for technology with the discipline and endurance of long-distance running.</p>
-            <div class="about-images">
-                <img src="images/KAY_5120.jpg" alt="Noah Altman 1">
-                <img src="images/KAY_5472.jpg" alt="Noah Altman 2">
-                <img src="images/KAY_5829.jpg" alt="Noah Altman 3">
-            </div>
-        </div>
-    </section>
+<section id="strava" class="strava">
+    <div class="container">
+        <h2>My Running Stats</h2>
+        <iframe height='160' width='300' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/athletes/31744808/activity-summary/d3a2b43d15c800a29e293d2401d5e431ff02f3f4'></iframe>
+    </div>
+</section>
 
-    <section class="resume-section">
-        <div class="container">
-            <h2>Resume</h2>
+<section id="contact" class="contact">
+    <div class="container">
+        <h2>Contact Me</h2>
+        <p>Connect with me on <a href="https://linkedin.com/in/YOUR_LINK" target="_blank">LinkedIn</a> or <a href="mailto:youremail@example.com">send me an email</a>.</p>
+    </div>
+</section>
 
-            <div class="resume-wrapper">
-                <div class="resume-column">
-                    <h3>Education</h3>
-                    <div class="resume-item">
-                        <h4>Washington State University, Vancouver</h4>
-                        <p><em>Bachelor's Degree in Electrical Engineering</em><br>
-                           <em>August 2023 - May 2025</em><br>
-                           GPA: 3.95 (Unweighted)<br>
-                           Planned Minors: Psychology and Computer Science<br>
-                           Relevant Coursework: Electrical Engineering, Solar Cells, Computer Science, Linear Algebra, Electrical Fundamentals</p>
-                    </div>
-                    <div class="resume-item">
-                        <h4>Oregon State University, Corvallis</h4>
-                        <p><em>Bachelor's Degree in Electrical Engineering</em><br>
-                           <em>September 2021 - June 2023</em><br>
-                           GPA: 3.61 (Unweighted)<br>
-                           Planned Minor: Psychology<br>
-                           Honors College Member<br>
-                           Relevant Coursework: Calculus, Physics, Chemistry, Computer Science, Electrical Fundamentals</p>
-                    </div>
-                    <div class="resume-item">
-                        <h4>Ridgefield High School, Ridgefield</h4>
-                        <p><em>High School Diploma</em><br>
-                           <em>August 2017 - June 2021</em><br>
-                           GPA: 3.98 (Unweighted)<br>
-                           AP Courses: Human Geography, Psychology, Chemistry, US History, Composition, Calculus, Government, Literature</p>
-                    </div>
-                </div>
-
-                <div class="resume-column">
-                    <h3>Skills</h3>
-                    <ul class="skills-list">
-                        <li>Leadership</li>
-                        <li>Organization</li>
-                        <li>Communication</li>
-                        <li>Time Management</li>
-                        <li>Problem Solving</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="resume-wrapper">
-                <div class="resume-column">
-                    <h3>Activities</h3>
-                    <div class="resume-item">
-                        <h4>Power Engineer - Student</h4>
-                        <p><em>November 2024 - Present</em><br>
-                           Worked as a student alongside other systems engineers in the transmission and distribution of power.</p>
-                    </div>
-                    <div class="resume-item">
-                        <h4>Cross Country Team (Assistant Coach)</h4>
-                        <p><em>August 2023 - Present</em><br>
-                           Coached High School athletes at the state and regional level. Communicated with race management and other coaches.</p>
-                    </div>
-                    <div class="resume-item">
-                        <h4>Oregon State University Running Club (Member)</h4>
-                        <p><em>September 2021 - June 2023</em><br>
-                           Ran collegiate level races. Helped plan and coordinate group runs.</p>
-                    </div>
-                    <div class="resume-item">
-                        <h4>National Honor Society (NHS) (Member)</h4>
-                        <p><em>August 2019 - June 2021</em><br>
-                           Planned city-wide events. Tutored freshmen and sophomores.</p>
-                    </div>
-                    <div class="resume-item">
-                        <h4>Cross Country Team (Varsity Athlete/Team Captain)</h4>
-                        <p><em>August 2017 - November 2020</em><br>
-                           Ran 5K races. Helped organize and manage the team during travel.</p>
-                    </div>
-                    <div class="resume-item">
-                        <h4>Associated Student Body (ASB) (Member)</h4>
-                        <p><em>August 2017 - June 2019</em><br>
-                           Planned school-wide events. Led the planning of the High School talent show.</p>
-                    </div>
-                </div>
-
-                <div class="resume-column">
-                    <h3>Hobbies</h3>
-                    <ul class="hobbies-list">
-                        <li>Running</li>
-                        <li>Computer Mechanics and Electronics</li>
-                    </ul>
-                </div>
-            </div>
-
-        </div>
-    </section>
+<footer class="footer">
+    <p>&copy; 2025 Noah Altman. All Rights Reserved.</p>
+</footer>
 
 </body>
 </html>
