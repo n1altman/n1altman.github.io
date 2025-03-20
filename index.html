@@ -17,20 +17,27 @@
             margin: auto;
             padding: 20px;
         }
+        .image-container img {
+            max-width: 400px;
+            height: auto;
+            border-radius: 8px;
+            display: block;
+            margin: 0 auto;
+        }
         .about-images {
-   	    display: flex;
-    	    justify-content: center;
-    	    gap: 20px;
-   	    flex-wrap: wrap;
-	}
-	.about-images img {
-    	    max-width: 300px;
-    	    height: auto;
-   	    border-radius: 8px;
-    	    display: block;
-    	    margin: 0 auto;
-    	    flex-basis: 300px;
-	}
+   	 		display: flex;
+    		justify-content: center;
+    		gap: 20px;
+   		 flex-wrap: wrap;
+		}
+		.about-images img {
+    		max-width: 300px;
+    		height: auto;
+   			border-radius: 8px;
+    		display: block;
+    		margin: 0 auto;
+    		flex-basis: 300px;
+		}
         header {
             background: #222;
             padding: 20px 0;
@@ -143,21 +150,13 @@
     </nav>
 </header>
 
-<section>
-        <div class="container two-columns">
-            <div class="column image-container">
-                <img src="images/KAY_4805.jpg" alt="Noah Altman">
-            </div>
-            <div class="column text-content">
-                <h1>Hi, I’m Noah</h1>
-                <h3>Power Engineer <br>
-                    Lifelong Runner <br>
-                    Technology Enthusiast <br>
-                    Assistant XC Coach
-                </h3>
-            </div>
-        </div>
-    </section>
+<section class="hero">
+    <img src="images/KAY_4805.jpg" alt="Noah Altman">
+    <div class="hero-text">
+        <h1>Hi, I’m Noah</h1>
+        <h3>Power Engineer | Runner | Tech Enthusiast</h3>
+    </div>
+</section>
     
 <section class="about-me-section">
         <div class="container">
